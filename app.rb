@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative './services/scanner'
 
-class Test < Sinatra::Base
+class Dashboard < Sinatra::Base
   get '/' do
     active_ips = Scanner.scan_ports
     html = "<h1>LunetteRuby Dashboard</h1>"
